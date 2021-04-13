@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  background-color: #fafafa;
   min-height: 100vh;
+}
+.app__headerContainer {
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.app__header {
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.app__headerLogo {
+  height: 35px;
+  padding: 15px;
+  object-fit: contain;
+}
+.app_signUp {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app__header button {
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  margin-left: 5px;
+  transition: .5s ease-in;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__header button:hover {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  
+  transition: .5s ease-in;
+}
+.app__upload {
+  margin: 0 auto;
 }

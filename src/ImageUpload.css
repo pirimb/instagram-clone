@@ -1,0 +1,19 @@
+.imageUpload {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+    max-width: 600px;
+    margin-top: 40px;
+}
+.imageUpload:hover {
+    opacity: 1;
+}
+.imageUpload__progress {
+    width: 100%;
+}
+.imageUpload__caption {
+    margin: 10px 0 10px;
+    padding: 5px;
+    outline: 0;
+}
